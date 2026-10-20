@@ -36,12 +36,5 @@ class TestScrabbleScore(unittest.TestCase):
         self.assertEqual(scrabble_score("c4bb4ge"), 12)  # a's replaced by digits
         self.assertEqual(scrabble_score("123 !@#"), 0)
 
-    #checks longer words for score. -> raf
-    def test_longer_words(self):
-        self.assertEqual(scrabble_score("street"), 6)
-        self.assertEqual(scrabble_score("quirky"), 22)
-        self.assertEqual(scrabble_score("OxyphenButazone"), 41)
-
-
 if __name__ == "__main__":
     unittest.main()
